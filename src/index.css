@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(10%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Custom Robot Logo bobbing and scanning keyframes */
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes eye-scan {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-4px) scaleX(0.9);
+  }
+  66% {
+    transform: translateX(4px) scaleX(0.9);
+  }
+}
+
+@keyframes border-pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0px rgba(59, 130, 246, 0.7), 0 0 0 4px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0), 0 0 0 12px rgba(59, 130, 246, 0);
+  }
+}
+
+@keyframes floating-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-eye-scan {
+  animation: eye-scan 3.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-border-glow {
+  animation: border-pulse-glow 2s infinite;
+}
+
+.animate-floating {
+  animation: floating-slow 3s ease-in-out infinite;
+}
+
