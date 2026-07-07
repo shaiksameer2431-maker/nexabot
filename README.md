@@ -1,12 +1,12 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+<img width="1200" height="475" alt="GHBanner" src="https://t4.ftcdn.net/jpg/06/00/28/17/360_F_600281716_rzh4YkugirCTIXphXCZHd16uAvC7up7t.jpg" />
 </div>
 
 # Run and deploy your AI Studio app
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/7d731cf9-1dd3-480b-a17b-6764aa5c0474
+View : https://necnnexabot.netlify.app/
 
 ## Run Locally
 
